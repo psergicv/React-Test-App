@@ -1,15 +1,13 @@
 import "../assets/style.css"
+import { Link } from 'react-router-dom';
 
 function Nav(){
     return (
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Page 1</li>
-                <li>Page 2</li>
-                <li>Page 3</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
             </ul>
         </nav>
     );
